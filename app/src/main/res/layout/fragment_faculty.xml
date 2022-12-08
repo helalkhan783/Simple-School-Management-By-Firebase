@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+     tools:context=".ui.faculty.FacultyFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            //design of physics
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:gravity="center_horizontal"
+                android:text="Dept Of Physics"
+                android:textColor="@color/black"
+                 android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/physicsRecyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/noPhysicsData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/data_not_found"/>
+
+            </LinearLayout>
+
+            //dept design chemmistry
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:gravity="center_horizontal"
+                android:text="Dept Of Chemistry"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+
+                android:textStyle="bold"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chemistryRecyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                 android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/noChemistryData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/data_not_found" />
+
+            </LinearLayout>
+
+            //dept of math design
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:gravity="center_horizontal"
+                android:text="Dept Of Math"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="#c1c1c1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mathRecyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                 android:background="@color/white"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/noMathData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <include layout="@layout/data_not_found"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

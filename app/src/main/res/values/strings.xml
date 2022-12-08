@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">College App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="close">Close</string>
+    <string name="about">Jagannath University (JnU) jagannātha biśbabidyālaẏa,
+University Acrostic : (JnU)  is a state-funded public university at 9-10,
+Chittaranjan Avenue in Sadarghat, Dhaka, the capital of Bangladesh.
+ Even though it is one of the most famous and academically one of the
+ best universities in Bangladesh, JnU is the only non-residential University in this country
+ Jagannath University is in the southern part of Dhaka
+ city near the River Buriganga and a new super modern campus
+ of approximately 200 acres is being built at Keraniganj.</string>
+</resources>
